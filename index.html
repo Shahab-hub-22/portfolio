@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahab Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; background: #fff; color: #000; }
+    header { display: flex; justify-content: space-between; align-items: center; background: aqua; padding: 20px 50px; flex-wrap: wrap; }
+    .logo h2 { font-family: "Dancing Script", cursive; font-size: 35px; color: darkslategrey; }
+    h2 > span { color: blue; }
+    nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-size: 18px; color: azure; font-weight: 600; }
+    nav a:hover { color: black; }
+    section { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+    #banner { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: space-between; }
+    .LeftBanner { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+    .LeftBanner h3 { font-size: 40px; }
+    .LeftBanner h3 span { color: rgb(6, 131, 90); }
+    .LeftBanner p { font-size: 18px; text-align: justify; }
+    .buttons { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+    .buttons a { padding: 10px 15px; font-size: 16px; border-radius: 18px 0px 18px 0px; text-decoration: none; }
+    .buttons a:first-child { background: blue; color: white; }
+    .buttons a:last-child { background: none; border: 1px solid brown; color: brown; }
+    .RightBanner { flex: 1; text-align: center; }
+    .RightBanner img { max-width: 300px; width: 100%; border-radius: 12px; }
+    h2.section-title { text-align: center; margin-bottom: 30px; font-size: 28px; }
+    .content { font-size: 18px; line-height: 1.6; }
+    form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto; }
+    input, textarea { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #aaa; }
+    button[type="submit"] { background: blue; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+    .social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
+    .social-icons a { text-decoration: none; color: #000; font-size: 20px; display: flex; align-items: center; gap: 8px; border: 1px solid #ccc; padding: 8px 12px; border-radius: 8px; }
+    .social-icons a:hover { background-color: #f0f0f0; }
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: center; }
+      nav ul { flex-direction: column; align-items: center; }
+      #banner { flex-direction: column; text-align: center; }
+      .LeftBanner { align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><h2>SHA<span>HAB</span></h2></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner">
+      <div class="LeftBanner">
+        <h3>I'm <span>Web Developer</span></h3>
+        <p>I’m Shahab, a creative and passionate web developer dedicated to building responsive, user-friendly websites and applications. With a strong eye for design and attention to detail, I bring digital ideas to life using the latest web technologies.</p>
+        <div class="buttons">
+          <a href="#contact">Hire Me</a>
+          <a href="s resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="RightBanner">
+        <img src="myphoto.jpg" alt="Shahab">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="content">I’m a self-driven developer who thrives on solving real-world problems through clean and efficient code. With a background in both frontend and backend development, I specialize in building complete web experiences from scratch.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="content">HTML5, CSS3, JavaScript, React.js, Tailwind CSS, Git & GitHub, Node.js (basic), Responsive Design, UI/UX Basics, API Integration</p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="content">
+        ✔ Portfolio Website<br>
+        ✔ Weather App<br>
+        ✔ To-do List App<br>
+        ✔ Responsive Blog Layout
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2 class="section-title">Resume</h2>
+      <p class="content">
+        <strong>Name:</strong> MD SHAHAB<br>
+        <strong>Phone:</strong> 8210049847<br>
+        <strong>Email:</strong> mdshahab2212zee@gmail.com<br>
+        <strong>DOB:</strong> 22 December 2001<br>
+        <strong>Father's Name:</strong> Md Ekram<br>
+        <strong>Education:</strong> BCA (2021), MCA (2024)<br>
+        <strong>Languages:</strong> Hindi, English, Urdu<br>
+        <strong>Location:</strong> Patna City, Bihar - 800008<br>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shahab_22__?igsh=MWNsM3FhdHhoYnEzZQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/md-shahab-a4a4362b5" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
